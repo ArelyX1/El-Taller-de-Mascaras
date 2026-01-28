@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bhslgly470agh"]
+
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/chiboloNepo.tscn" id="1_bn5u7"]
+[ext_resource type="Script" uid="uid://dctx2j7mgagvf" path="res://Objects/Scripts/Escenes/mainEscene.gd" id="1_kmffk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bn5u7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kmffk"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" unique_id=1638862825]
+script = ExtResource("1_kmffk")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=738244658]
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=912887684]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1962155530]
+transform = Transform3D(17.908215, 0, 0, 0, 0.99999994, 0, 0, 0, 12.312729, 0, 0, 0)
+mesh = SubResource("BoxMesh_bn5u7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1125373931]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1978729148]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 0, 0, 0.9999999, 0, 0, 0)
+shape = SubResource("BoxShape3D_kmffk")
+
+[node name="Character" parent="." unique_id=241886524 instance=ExtResource("1_bn5u7")]
