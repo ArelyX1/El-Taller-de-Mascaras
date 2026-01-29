@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cc1m2a1obsyn4"]
 
 [ext_resource type="Script" uid="uid://hutuis63hgev" path="res://addons/fpc/character.gd" id="1_0t4e8"]
+[ext_resource type="PackedScene" uid="uid://cytm6wc7mkowg" path="res://Objects/assets/hudInstructions.tscn" id="2_w5efx"]
 [ext_resource type="Script" uid="uid://dgfl3skp075ft" path="res://addons/fpc/EditorModule.gd" id="3_v3ckk"]
 [ext_resource type="Script" uid="uid://u5u7xxlvmcxx" path="res://addons/fpc/debug.gd" id="3_x1wcc"]
 
@@ -416,6 +417,13 @@ blend_times = [&"RESET", &"RESET", 0.5, &"RESET", &"walk", 0.5, &"walk", &"RESET
 libraries/ = SubResource("AnimationLibrary_qeg5r")
 speed_scale = 4.0
 
+[node name="SeeCast" type="RayCast3D" parent="Head" unique_id=1968769354]
+unique_name_in_owner = true
+transform = Transform3D(1.5, 8.3455134e-08, -6.566895e-08, -6.5740586e-08, 0.0028734112, -1.5006143, -6.546725e-08, 1.9092754, 0.0022583867, 0, 0, 0)
+collision_mask = 8
+
+[node name="CanvasInstructions" parent="Head" unique_id=857366253 instance=ExtResource("2_w5efx")]
+
 [node name="UserInterface" type="Control" parent="." unique_id=286827915]
 layout_mode = 3
 anchors_preset = 15
@@ -448,3 +456,24 @@ target_position = Vector3(0, 0.5, 0)
 
 [node name="EditorModule" type="Node" parent="." unique_id=320957367]
 script = ExtResource("3_v3ckk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=707385624]
+
+[node name="BoxContainer" type="BoxContainer" parent="CanvasLayer" unique_id=1736044378]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="GenericInteractText" type="Label" parent="CanvasLayer/BoxContainer" unique_id=558316063]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Press \"E\" to interact"

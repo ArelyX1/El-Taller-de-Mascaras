@@ -175,6 +175,15 @@ func _physics_process(delta): # Most things happen here.
 		velocity.z = 0
 	else:
 		immobile = false
+	# SeeCast
+	%GenericInteractText.hide()
+	if %SeeCast.is_colliding():
+		var target = %SeeCast.get_collider()
+		if target != null && target.has_method("interact"):
+			%GenericInteractText.text = "Interact with " + target.displayName
+			%GenericInteractText.show()
+			if Input.is_action_just_pressed("Interact"):
+				target.interact()		
 	# Gravity
 	if dynamic_gravity:
 		gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
