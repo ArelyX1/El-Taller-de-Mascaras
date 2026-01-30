@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/chiboloNepo.tscn" id="1_bn5u7"]
 [ext_resource type="Script" uid="uid://dctx2j7mgagvf" path="res://Objects/Scripts/Escenes/mainEscene.gd" id="1_kmffk"]
 [ext_resource type="PackedScene" uid="uid://cs2y311iaooma" path="res://Objects/assets/diary.tscn" id="3_vkyet"]
+[ext_resource type="Script" uid="uid://dbxh7h3i5vghm" path="res://Objects/Scripts/Assets/Potions/world_drop.gd" id="4_hytto"]
 
 [sub_resource type="Environment" id="Environment_vkyet"]
 background_energy_multiplier = 12.04
@@ -62,3 +63,12 @@ shape = SubResource("CylinderShape3D_vkyet")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0975256, 1.2043917, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1816548566]
+
+[node name="WorldDropArea" type="Control" parent="." unique_id=2044418444]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_hytto")

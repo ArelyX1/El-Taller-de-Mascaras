@@ -2,6 +2,8 @@ extends Node
 
 var has_diary: bool = false
 
+var isInventary: bool = false
+
 func DialogicStart(dialogicPath):
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	Dialogic.start(dialogicPath)
