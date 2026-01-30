@@ -2,10 +2,6 @@
 
 [ext_resource type="Script" uid="uid://7iuj3u7ddten" path="res://Objects/Scripts/Assets/inventory_panel.gd" id="1_2c31v"]
 [ext_resource type="Script" uid="uid://vo023fc7smka" path="res://Objects/Scripts/Assets/item_slot.gd" id="1_eegqa"]
-[ext_resource type="Texture2D" uid="uid://b2epmh4vbmejd" path="res://icon.svg" id="2_11mnf"]
-[ext_resource type="Texture2D" uid="uid://c3x1qk0uqo6wn" path="res://Objects/assets/HudInstruct.png" id="3_11mnf"]
-[ext_resource type="Resource" uid="uid://b1f3javfp8xbu" path="res://Objects/Scripts/Assets/Potions/potion1.tres" id="3_i2vdk"]
-[ext_resource type="Resource" uid="uid://dh3dydavlxa53" path="res://Objects/Scripts/Assets/Potions/potion2.tres" id="5_qgmbb"]
 
 [node name="CanvasInventory" type="CanvasLayer" unique_id=654066164]
 
@@ -44,48 +40,6 @@ metadata/_edit_use_anchors_ = true
 [node name="InventoryGridContainer" type="GridContainer" parent="Inventory/MarginContainer" unique_id=54380584]
 layout_mode = 2
 columns = 6
-
-[node name="ItemSlot" type="Panel" parent="Inventory/MarginContainer/InventoryGridContainer" unique_id=1544299315]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("1_eegqa")
-item = ExtResource("3_i2vdk")
-
-[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/InventoryGridContainer/ItemSlot" unique_id=1050674604]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-texture = ExtResource("2_11mnf")
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
-
-[node name="ItemSlot2" type="Panel" parent="Inventory/MarginContainer/InventoryGridContainer" unique_id=1794148528]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("1_eegqa")
-item = ExtResource("5_qgmbb")
-
-[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/InventoryGridContainer/ItemSlot2" unique_id=281675379]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-texture = ExtResource("3_11mnf")
-expand_mode = 1
-stretch_mode = 5
-metadata/_edit_use_anchors_ = true
 
 [node name="ItemSlot3" type="Panel" parent="Inventory/MarginContainer/InventoryGridContainer" unique_id=1125364650]
 custom_minimum_size = Vector2(50, 50)
@@ -264,6 +218,44 @@ layout_mode = 2
 script = ExtResource("1_eegqa")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/InventoryGridContainer/ItemSlot12" unique_id=1606935605]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09886261
+anchor_top = 0.13409656
+anchor_right = 1.0988624
+anchor_bottom = 1.1340964
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7886283, 0.72861433)
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemSlot13" type="Panel" parent="Inventory/MarginContainer/InventoryGridContainer" unique_id=313040982]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("1_eegqa")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/InventoryGridContainer/ItemSlot13" unique_id=850324669]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09886261
+anchor_top = 0.13409656
+anchor_right = 1.0988624
+anchor_bottom = 1.1340964
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7886283, 0.72861433)
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemSlot14" type="Panel" parent="Inventory/MarginContainer/InventoryGridContainer" unique_id=1239205964]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+script = ExtResource("1_eegqa")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/InventoryGridContainer/ItemSlot14" unique_id=743947721]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.09886261

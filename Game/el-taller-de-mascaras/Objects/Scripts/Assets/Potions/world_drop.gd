@@ -2,6 +2,9 @@ extends Control
 
 const WORLD_ITEM = preload("uid://d06616oqh27ou")
 
+func _ready() -> void:
+	mouse_filter = MOUSE_FILTER_IGNORE
+
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 	return true
 
@@ -11,8 +14,19 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 	node.set_meta("item_data", data.item)
 	node.get_node("MeshInstance3D").mesh = data.item.mesh
 	get_tree().current_scene.add_child(node)
+	
+	var camera = get_viewport().get_camera_3d()
+	var drop_pos = camera.project_position(at_position, 3.0)
+	drop_pos.y += 1.5 # Esto asegura que caiga desde arriba y no dentro del suelo
+	node.global_position = drop_pos
+	
 	data.item = null
-	node.global_position = Vector3(randf(), 1, randf())
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_DRAG_BEGIN:
+		mouse_filter = MOUSE_FILTER_PASS
+	elif what == NOTIFICATION_DRAG_END:
+		mouse_filter = MOUSE_FILTER_IGNORE
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton && Global.isInventary:

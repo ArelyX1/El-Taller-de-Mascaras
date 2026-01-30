@@ -2,6 +2,12 @@ extends RigidBody3D
 
 # Asegúrate de que este nombre coincida con lo que esperas en el HUD
 @export var displayName: String = "Potion" 
+@export var item_data: Resource
+func _ready() -> void:
+	if item_data:
+		# Se autoconfigura al iniciar el juego
+		set_meta("item_data", item_data)
+		get_node("MeshInstance3D").mesh = item_data.mesh
 
 func interact():
 	# 1. Obtenemos los datos del ítem guardados en los metadatos
@@ -23,7 +29,7 @@ func interact():
 				slot.item = data
 				if slot.has_method("update_ui"):
 					slot.update_ui()
-				# queue_free()
+				queue_free()
 				return # Salimos para no llenar todos los slots con el mismo ítem
 	else:
 		print("No se encontró el InventoryGridContainer")
