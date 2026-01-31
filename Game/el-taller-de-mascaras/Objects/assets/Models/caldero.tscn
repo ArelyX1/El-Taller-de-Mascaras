@@ -18,6 +18,8 @@ size = Vector3(3962.1394, 0.23175049, 0.77599335)
 
 [node name="caldero" type="StaticBody3D" unique_id=1938278463]
 transform = Transform3D(-0.0002975528, 0, 0, 0, 1.4043366, 0, 0, 0, 1.5124713, 0, 0, 0)
+collision_layer = 9
+collision_mask = 9
 script = ExtResource("1_ebp4b")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1704443758]
@@ -49,13 +51,13 @@ transform = Transform3D(1, 0, 0, 0, 1.0000728, 0, 0, 0, 1, -137.53969, 0.7469263
 shape = SubResource("BoxShape3D_l8otv")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="." unique_id=91590565]
-transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -115.31754, 0.60082304, -0.05278397)
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1, -115.31754, 0.68811464, -0.04419184)
 shape = SubResource("BoxShape3D_62fne")
 debug_color = Color(0.8306589, 0.0014391094, 0.9451167, 0.41960785)
 
 [node name="CalderoSeeCast" type="RayCast3D" parent="CollisionShape3D6" unique_id=501960234]
 unique_name_in_owner = true
-transform = Transform3D(-10.567092, 0, 0, 0, -0.33549362, 0, 0, 0, -31.985685, 35.705475, 0.115657985, 0.04705957)
+transform = Transform3D(-10.567092, 0, 0, 0, -0.3354937, 0, 0, 0, -5.7867928, 35.705475, 0.115657926, 0.04705957)
 collision_mask = 8
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=777852424]

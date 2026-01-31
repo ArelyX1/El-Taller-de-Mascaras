@@ -8,6 +8,12 @@
 [ext_resource type="Resource" uid="uid://b1f3javfp8xbu" path="res://Objects/Scripts/Assets/Potions/potion1.tres" id="6_aknbo"]
 [ext_resource type="Resource" uid="uid://dh3dydavlxa53" path="res://Objects/Scripts/Assets/Potions/potion2.tres" id="7_1etey"]
 [ext_resource type="PackedScene" uid="uid://tnqngowfduld" path="res://Objects/assets/caldero/caldero_off.tscn" id="8_74nta"]
+[ext_resource type="Resource" uid="uid://bbjpl8oidj17h" path="res://Objects/Scripts/Assets/Potions/potion5.tres" id="9_0rpw1"]
+[ext_resource type="Resource" uid="uid://bd0b7c4kpv5ww" path="res://Objects/Scripts/Assets/Potions/potion10.tres" id="11_0rpw1"]
+[ext_resource type="Resource" uid="uid://b7soby52eo22" path="res://Objects/Scripts/Assets/Potions/potion3.tres" id="11_rpe1k"]
+[ext_resource type="Resource" uid="uid://liiu2fahpt5h" path="res://Objects/Scripts/Assets/Potions/potion6.tres" id="12_00raa"]
+[ext_resource type="Resource" uid="uid://djd5bvkmercs4" path="res://Objects/Scripts/Assets/Potions/potion7.tres" id="13_c45ae"]
+[ext_resource type="Resource" uid="uid://bllvma7wiijcx" path="res://Objects/Scripts/Assets/Potions/potion9.tres" id="14_17vew"]
 
 [sub_resource type="Environment" id="Environment_vkyet"]
 background_energy_multiplier = 12.04
@@ -86,8 +92,44 @@ transform = Transform3D(-0.24562028, 0, -0.108326316, 0, 0.26844722, 0, 0.108326
 item_data = ExtResource("7_1etey")
 
 [node name="RigidBody3D3" parent="." unique_id=611338652 instance=ExtResource("5_ho8ui")]
-transform = Transform3D(0.1963778, 0, 0.18302912, 0, 0.26844722, 0, -0.18302912, 0, 0.1963778, -4.7185793, 0.5260811, -3.5058777)
+transform = Transform3D(0.1963778, 0, 0.18302912, 0, 0.26844722, 0, -0.18302912, 0, 0.1963778, -4.7185793, 0.5260811, -3.1694727)
 item_data = ExtResource("7_1etey")
 
 [node name="Node3D" parent="." unique_id=857613492 instance=ExtResource("8_74nta")]
 transform = Transform3D(-0.06874658, 0, 0.9976342, 0, 1, 0, -0.9976342, 0, -0.06874658, 0, -0.016487122, -4.180905)
+
+[node name="RigidBody3D4" parent="." unique_id=281792547 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(-0.014713764, 0, 0.26804364, 0, 0.2684472, 0, -0.26804364, 0, -0.014713764, -4.7185793, 0.5260811, -0.417449)
+item_data = ExtResource("7_1etey")
+
+[node name="RigidBody3D5" parent="." unique_id=1604094231 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.1963778, 0, 0.18302912, 0, 0.26844722, 0, -0.18302912, 0, 0.1963778, -4.7185793, 0.5260811, 0.5623152)
+item_data = ExtResource("7_1etey")
+
+[node name="RigidBody3D6" parent="." unique_id=527699911 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.07201022, 0, -0.25860858, 0, 0.26844716, 0, 0.25860858, 0, 0.07201022, 2.5397215, 0.5260811, -0.417449)
+item_data = ExtResource("9_0rpw1")
+
+[node name="RigidBody3D7" parent="." unique_id=1498500871 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(-0.08860625, 0, -0.25340247, 0, 0.26844716, 0, 0.25340247, 0, -0.08860625, 2.5397215, 0.5260811, 1.3668895)
+item_data = ExtResource("13_c45ae")
+
+[node name="RigidBody3D8" parent="." unique_id=1875003766 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.07201022, 0, -0.25860858, 0, 0.26844716, 0, 0.25860858, 0, 0.07201022, 3.818088, 0.5260811, 2.4861732)
+item_data = ExtResource("11_0rpw1")
+
+[node name="RigidBody3D9" parent="." unique_id=260701817 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.07201022, 0, -0.25860858, 0, 0.26844716, 0, 0.25860858, 0, 0.07201022, 2.5286222, 0.5260811, -2.5200896)
+item_data = ExtResource("11_rpe1k")
+
+[node name="RigidBody3D10" parent="." unique_id=555552988 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.07201022, 0, -0.25860858, 0, 0.26844716, 0, 0.25860858, 0, 0.07201022, 4.340753, 0.5260811, -2.5200896)
+item_data = ExtResource("12_00raa")
+
+[node name="RigidBody3D11" parent="." unique_id=939308637 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.07201022, 0, -0.25860858, 0, 0.26844716, 0, 0.25860858, 0, 0.07201022, 4.340753, 0.5260811, 0.09544325)
+item_data = ExtResource("13_c45ae")
+
+[node name="RigidBody3D12" parent="." unique_id=1342824397 instance=ExtResource("5_ho8ui")]
+transform = Transform3D(0.07201022, 0, -0.25860858, 0, 0.26844716, 0, 0.25860858, 0, 0.07201022, 4.340753, 0.5260811, 0.09544325)
+item_data = ExtResource("14_17vew")

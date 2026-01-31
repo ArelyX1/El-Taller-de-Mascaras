@@ -19,6 +19,8 @@ subdivide_height = 2
 subdivide_depth = 2
 
 [node name="InventaryCaldero" type="StaticBody3D" unique_id=2112374723]
+collision_layer = 9
+collision_mask = 9
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1186177976]
 transform = Transform3D(2.221903, 0, 0, 0, 0.9839024, 0, 0, 0, 1.0129688, 0, 0, 0)
@@ -59,7 +61,7 @@ scale = Vector2(0.122774675, 0.358108)
 
 [node name="InventoryCalderoGridContainer" type="GridContainer" parent="SubViewport/Inventory/MarginContainer" unique_id=2050782652]
 layout_mode = 2
-columns = 6
+columns = 3
 
 [node name="ItemSlot3" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=650231721]
 custom_minimum_size = Vector2(50, 50)
@@ -103,168 +105,6 @@ layout_mode = 2
 script = ExtResource("2_tq3k0")
 
 [node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot5" unique_id=899772316]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot6" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=1118293072]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot6" unique_id=922941654]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot7" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=1917870748]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot7" unique_id=678127055]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot8" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=2025026237]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot8" unique_id=1296627257]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot9" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=980015562]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot9" unique_id=804637551]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot10" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=1410548062]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot10" unique_id=367136309]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot11" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=1686270502]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot11" unique_id=677763264]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot12" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=2010815686]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot12" unique_id=1223082927]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot13" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=1540588586]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot13" unique_id=951241328]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.09886261
-anchor_top = 0.13409656
-anchor_right = 1.0988624
-anchor_bottom = 1.1340964
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.7886283, 0.72861433)
-expand_mode = 1
-stretch_mode = 5
-
-[node name="ItemSlot14" type="Panel" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer" unique_id=1254371958]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-script = ExtResource("2_tq3k0")
-
-[node name="Icon" type="TextureRect" parent="SubViewport/Inventory/MarginContainer/InventoryCalderoGridContainer/ItemSlot14" unique_id=847729689]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.09886261
