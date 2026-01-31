@@ -10,7 +10,7 @@ func _ready() -> void:
 		get_node("MeshInstance3D").mesh = item_data.mesh
 
 func interact():
-	# 1. Obtenemos los datos del ítem guardados en los metadatos
+	Global.isMouseVisible = !Global.isMouseVisible
 	Global.DialogicStart("res://Objects/assets/potions/potionDrop.dtl")
 	if not has_meta("item_data"):
 		print("Error: Este objeto no tiene metadatos 'item_data'")
@@ -33,3 +33,25 @@ func interact():
 				return # Salimos para no llenar todos los slots con el mismo ítem
 	else:
 		print("No se encontró el InventoryGridContainer")
+
+func interactCaldero():
+	# 1. Buscamos el contenedor del inventario del Caldero en la escena
+	var grid = get_tree().root.find_child("InventoryCalderoGridContainer", true, false)
+	
+	if grid:
+		# 2. Recorremos todos los slots (hijos del GridContainer)
+		for slot in grid.get_children():
+			# 3. Si el slot está vacío (item es null)
+			if slot.item == null:
+				# 4. Le asignamos los datos de este objeto. 
+				# Asegúrate de tener una variable 'item_data' o usa get_meta("item_data")
+				slot.item = get_meta("item_data") 
+				
+				# 5. Llamamos a la función que actualiza la imagen (del video)
+				slot.update_ui()
+				
+				# 6. Eliminamos el objeto del mundo 3D
+				queue_free()
+				
+				# 7. Salimos de la función para no llenar todos los slots a la vez
+				return

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d06616oqh27ou" path="res://Objects/Escenes/world_item.tscn" id="5_ho8ui"]
 [ext_resource type="Resource" uid="uid://b1f3javfp8xbu" path="res://Objects/Scripts/Assets/Potions/potion1.tres" id="6_aknbo"]
 [ext_resource type="Resource" uid="uid://dh3dydavlxa53" path="res://Objects/Scripts/Assets/Potions/potion2.tres" id="7_1etey"]
+[ext_resource type="PackedScene" uid="uid://tnqngowfduld" path="res://Objects/assets/caldero/caldero_off.tscn" id="8_74nta"]
 
 [sub_resource type="Environment" id="Environment_vkyet"]
 background_energy_multiplier = 12.04
@@ -22,13 +23,13 @@ glow_hdr_luminance_cap = 2.14
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kmffk"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1tkel"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1etey"]
 transparency = 4
 depth_draw_mode = 1
 albedo_color = Color(1, 0.3254902, 1, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_vkyet"]
-material = SubResource("StandardMaterial3D_1tkel")
+material = SubResource("StandardMaterial3D_1etey")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_vkyet"]
 
@@ -87,3 +88,6 @@ item_data = ExtResource("7_1etey")
 [node name="RigidBody3D3" parent="." unique_id=611338652 instance=ExtResource("5_ho8ui")]
 transform = Transform3D(0.1963778, 0, 0.18302912, 0, 0.26844722, 0, -0.18302912, 0, 0.1963778, -4.7185793, 0.5260811, -3.5058777)
 item_data = ExtResource("7_1etey")
+
+[node name="Node3D" parent="." unique_id=857613492 instance=ExtResource("8_74nta")]
+transform = Transform3D(-0.06874658, 0, 0.9976342, 0, 1, 0, -0.9976342, 0, -0.06874658, 0, -0.016487122, -4.180905)

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tnqngowfduld"]
+
+[ext_resource type="PackedScene" uid="uid://bqd43rh0tolka" path="res://Objects/assets/caldero/caldero_inventary.tscn" id="1_08ycc"]
+[ext_resource type="PackedScene" uid="uid://jfl3g2mq820l" path="res://Objects/assets/Models/caldero.tscn" id="2_xg2qh"]
+
+[node name="Node3D" type="Node3D" unique_id=857613492]
+
+[node name="InventaryCaldero" parent="." unique_id=2112374723 instance=ExtResource("1_08ycc")]
+transform = Transform3D(-0.05078471, 0, -0.9987096, 0, 1, 0, 0.9987096, 0, -0.05078471, -0.056394577, 4.040382, 0)
+
+[node name="caldero" parent="." unique_id=1938278463 instance=ExtResource("2_xg2qh")]

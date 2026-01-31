@@ -53,6 +53,8 @@ text/autopauses={}
 layout/style_list=[]
 layout/default_style="Default"
 variables={}
+text/autoadvance_enabled=false
+text/autoadvance_fixed_delay=1.0
 
 [editor_plugins]
 

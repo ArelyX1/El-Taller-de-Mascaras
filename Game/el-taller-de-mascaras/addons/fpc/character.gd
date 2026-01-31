@@ -225,7 +225,9 @@ func _physics_process(delta): # Most things happen here.
 func handle_jumping():
 	if Input.mouse_mode == Input.MOUSE_MODE_VISIBLE:
 		return
-	"""
+		
+		
+		
 	if jumping_enabled:
 		if continuous_jumping: # Hold down the jump button
 			if Input.is_action_pressed(controls.JUMP) and is_on_floor() and !low_ceiling:
@@ -237,7 +239,7 @@ func handle_jumping():
 				if jump_animation:
 					JUMP_ANIMATION.play("jump", 0.25)
 				velocity.y += jump_velocity
-	"""
+
 	return
 
 func handle_movement(delta, input_dir):

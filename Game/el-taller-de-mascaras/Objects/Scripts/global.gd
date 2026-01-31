@@ -3,8 +3,14 @@ extends Node
 var has_diary: bool = false
 
 var isInventary: bool = false
+var isMouseVisible: bool = false
 
 func DialogicStart(dialogicPath):
+	if isMouseVisible:
+		Dialogic.start(dialogicPath)
+		isMouseVisible = !isMouseVisible
+		Dialogic.timeline_ended.connect(func(): Input.mouse_mode = Input.MOUSE_MODE_CAPTURED)
+		return
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	Dialogic.start(dialogicPath)
 	Dialogic.timeline_ended.connect(func(): Input.mouse_mode = Input.MOUSE_MODE_CAPTURED)
